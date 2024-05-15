@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model List<EventManagementSystem.Models.ReviewViewModel>
+
+<h1>Reviews</h1>
+
+@foreach (var reviewDetails in Model)
+{
+    <div class="card card-body mb-3">
+        <h2>User: @reviewDetails.UserName</h2>
+        <h3>Event: @reviewDetails.EventName</h3>
+        <p>Rating: @reviewDetails.Rating</p>
+        <p>Message: @reviewDetails.Message</p>
+    </div>
+}

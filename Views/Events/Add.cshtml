@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model EventManagementSystem.Models.AddEventViewModel
+
+<div class="lg:w-50 mx-lg-auto">
+    <h2>Add Event</h2>
+
+    <div>
+        <form method="post">
+            <div class="form-group">
+                <label class="form-label" for="event-name">Name</label>
+                <input class="form-control" type="text" id="event-name" asp-for="Name" />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="event-price">Price</label>
+                <input class="form-control" type="number" id="event-price" asp-for="Price" />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="event-description">Description</label>
+                <input class="form-control" type="text" id="event-description" asp-for="Description" />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Date and Time</label>
+                <input class="form-control" type="datetime-local" id="event-date" asp-for="Date" />
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-3">Add Event</button>
+        </form>
+    </div>
+</div>
